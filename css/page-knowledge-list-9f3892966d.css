@@ -119,3 +119,7 @@
 .title-link:hover {
     color: #999999;
 }
+
+.knowledge_list {
+  width: 100%;
+}
