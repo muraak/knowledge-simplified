@@ -1,0 +1,900 @@
+@charset "UTF-8";
+/*
+ * jQuery File Upload Plugin CSS
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer;
+}
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+  .fileinput-button input {
+    filter: alpha(opacity=0);
+    font-size: 100%;
+    height: 100%;
+  }
+}
+
+@charset "UTF-8";
+/*
+ * jQuery File Upload UI Plugin CSS
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.fileupload-buttonbar .btn,
+.fileupload-buttonbar .toggle {
+  margin-bottom: 5px;
+}
+.progress-animated .progress-bar,
+.progress-animated .bar {
+  background: url("../img/progressbar.gif") !important;
+  filter: none;
+}
+.fileupload-process {
+  float: right;
+  display: none;
+}
+.fileupload-processing .fileupload-process,
+.files .processing .preview {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../img/loading.gif") center no-repeat;
+  background-size: contain;
+}
+.files audio,
+.files video {
+  max-width: 300px;
+}
+
+@media (max-width: 767px) {
+  .fileupload-buttonbar .toggle,
+  .files .toggle,
+  .files .btn span {
+    display: none;
+  }
+  .files .name {
+    width: 80px;
+    word-wrap: break-word;
+  }
+  .files audio,
+  .files video {
+    max-width: 80px;
+  }
+  .files img,
+  .files canvas {
+    max-width: 100%;
+  }
+}
+
+.atwho-view{position:absolute;top:0;left:0;display:none;margin-top:18px;background:#fff;color:#000;border:1px solid #DDD;border-radius:3px;box-shadow:0 0 5px rgba(0,0,0,.1);min-width:120px;z-index:11110!important}.atwho-view .atwho-header{padding:5px;margin:5px;cursor:pointer;border-bottom:solid 1px #eaeff1;color:#6f8092;font-size:11px;font-weight:700}.atwho-view .atwho-header .small{color:#6f8092;float:right;padding-top:2px;margin-right:-5px;font-size:12px;font-weight:400}.atwho-view .atwho-header:hover{cursor:default}.atwho-view .cur{background:#36F;color:#fff}.atwho-view .cur small{color:#fff}.atwho-view strong{color:#36F}.atwho-view .cur strong{color:#fff;font:700}.atwho-view ul{list-style:none;padding:0;margin:auto;max-height:200px;overflow-y:auto}.atwho-view ul li{display:block;padding:5px 10px;border-bottom:1px solid #DDD;cursor:pointer}.atwho-view small{font-size:smaller;color:#777;font-weight:400}
+.preview {
+    word-break: normal;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+
+.bootstrap-tagsinput { width: 100%; }
+.bootstrap-tagsinput input {
+    min-width: 300px;
+}
+
+.file-group {
+    margin-bottom: 6px;
+}
+.filediv {
+    margin: 10px;
+    border-bottom: 1px dotted #cccccc;
+    padding-bottom: 2px;
+}
+
+#drop_target {
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 10px;        /* CSS3���� */
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome�p */
+    -moz-border-radius: 10px;    /* Firefox�p */
+}
+
+
+@media only screen and (max-width:767px){
+    .radio-inline { 
+        margin-left: 10px;
+    }
+}
+
+
+.emoji {
+    width: 24px;
+    height: 24px;
+}
+.emojis li {
+    list-style-type: none;
+}
+.emojis li .name {
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+}
+.helpMarkdownLabel {
+    font-size: small;
+    cursor: pointer;
+}
+.sampleMarkdownText {
+    word-wrap: break-word;
+}
+
+#tagDatas .name {
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+}
+
+#groupDatas .name {
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+}
+
+.tag_list > a {
+    text-decoration: none;
+}
+
+.markdown_sample{
+    border: 2px solid silver;
+    padding: 5px;
+    height: 300px;
+    overflow: auto;
+}
+
+.article_buttons {}
+.article_buttons div {
+    margin-bottom: 6px;
+}
+.btn_1 {
+    width: 97%;
+}
+.btn_2 {
+    width: 48%;
+}
+
+.tips_info {
+/*    border-radius: 5px; */
+/*    padding: 5px; */
+/*    border: 1px solid gray; */
+    font-size: 8pt;
+}
+
+.article_meta {}
+.article_meta .form-group {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid silver;
+}
+
+.dispKnowledgeInfo {
+    color: #999999;
+    font-size: 14pt;
+}
+
+@media only screen and (max-width:767px){
+    .confirmWidth {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media only screen and (min-width:768px){
+    .confirmWidth {
+        width: 768px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.item_description {
+    font-size: 12px;
+    position: relative;
+    background: #dedede;
+    border: 2px solid #55626b;
+    margin: 0 30px 5px 30px;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.item_description:after, .item_description:before {
+    top: 100%;
+    left: 10%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.item_description:after {
+    border-color: rgba(222, 222, 222, 0);
+    border-top-color: #dedede;
+    border-width: 11px;
+    margin-left: -11px;
+}
+.item_description:before {
+    border-color: rgba(85, 98, 107, 0);
+    border-top-color: #55626b;
+    border-width: 14px;
+    margin-left: -14px;
+}
+
+.markdown a {
+    /* color: #4183C4; */
+    /* color: #18bc9c; */
+    word-wrap: break-word;
+}
+
+.markdown a.absent {
+    /* color: #cc0000; */
+}
+
+.markdown a.anchor {
+    display: block;
+    padding-left: 30px;
+    margin-left: -30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+    margin: 20px 0 10px;
+    padding: 0;
+    padding-bottom: 8px;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    cursor: text;
+    position: relative;
+}
+
+.markdown h1:hover a.anchor,
+.markdown h2:hover a.anchor,
+.markdown h3:hover a.anchor,
+.markdown h4:hover a.anchor,
+.markdown h5:hover a.anchor,
+.markdown h6:hover a.anchor {
+    background: url("../images/para.png") no-repeat
+        10px center;
+    text-decoration: none;
+}
+
+.markdown h1 tt,
+.markdown h1 code {
+    font-size: inherit;
+}
+
+.markdown h2 tt,
+.markdown h2 code {
+    font-size: inherit;
+}
+
+.markdown h3 tt,
+.markdown h3 code {
+    font-size: inherit;
+}
+
+.markdown h4 tt,
+.markdown h4 code {
+    font-size: inherit;
+}
+
+.markdown h5 tt,
+.markdown h5 code {
+    font-size: inherit;
+}
+
+.markdown h6 tt,
+.markdown h6 code {
+    font-size: inherit;
+}
+
+.markdown h1 {
+    font-size: 28px;
+    color: black;
+}
+
+.markdown h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    border-bottom: 1px solid #dddddd;
+    color: black;
+}
+
+.markdown h3 {
+    font-size: 18px;
+}
+
+.markdown h4 {
+    font-size: 16px;
+}
+
+.markdown h5 {
+    font-size: 14px;
+}
+
+.markdown h6 {
+    color: #777777;
+    font-size: 14px;
+}
+
+.markdown p,
+.markdown blockquote,
+.markdown dl,
+.markdown table{
+    margin: 15px 0;
+}
+
+.markdown ul,
+.markdown ol,
+.markdown li {}
+
+.markdown p,
+.markdown blockquote,
+.markdown li,
+.markdown dt,
+.markdown table{
+    line-height: 2.0em;
+}
+
+.markdown hr {
+    background: transparent
+        url("../images/dirty-shade.png") repeat-x 0 0;
+    border: 0 none;
+    color: #cccccc;
+    height: 4px;
+    padding: 0;
+}
+
+.markdown >h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.markdown >h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.markdown >h1:first-child+h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.markdown >h3:first-child,
+.markdown >h4:first-child,
+.markdown >h5:first-child,
+.markdown >h6:first-child
+    {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.markdown a:first-child h1,
+.markdown a:first-child h2,
+.markdown a:first-child h3,
+.markdown a:first-child h4,
+.markdown a:first-child h5,
+.markdown a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.markdown h1 p,
+.markdown h2 p,
+.markdown h3 p,
+.markdown h4 p,
+.markdown h5 p,
+.markdown h6 p {
+    margin-top: 0;
+}
+
+.markdown li p.first {
+    display: inline-block;
+}
+
+.markdown ul,
+.markdown ol {
+    padding-left: 30px;
+}
+
+.markdown ul :first-child,
+.markdown ol :first-child {
+    margin-top: 0;
+}
+
+.markdown ul :last-child,
+.markdown ol :last-child {
+    margin-bottom: 0;
+}
+
+.markdown dl {
+    padding: 0;
+}
+
+.markdown dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px;
+}
+
+.markdown dl dt:first-child {
+    padding: 0;
+}
+
+.markdown dl dt>:first-child {
+    margin-top: 0;
+}
+
+.markdown dl dt>:last-child {
+    margin-bottom: 0;
+}
+
+.markdown dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px;
+}
+
+.markdown dl dd>:first-child {
+    margin-top: 0;
+}
+
+.markdown dl dd>:last-child {
+    margin-bottom: 0;
+}
+
+.markdown blockquote {
+    border-left: 4px solid #dddddd;
+    padding: 0 15px;
+    color: #777777;
+    font-size: 15px;
+}
+
+.markdown blockquote>:first-child {
+    margin-top: 0;
+}
+
+.markdown blockquote>:last-child {
+    margin-bottom: 0;
+}
+
+.markdown table {
+    padding: 0;
+}
+
+.markdown table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.markdown table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+.markdown table tr th {
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+.markdown table tr td {
+    border: 1px solid #cccccc;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+.markdown table tr th :first-child,
+.markdown table tr td :first-child {
+    margin-top: 0;
+}
+
+.markdown table tr th :last-child,
+.markdown table tr td :last-child {
+    margin-bottom: 0;
+}
+
+.markdown img {
+    max-width: 100%;
+}
+
+.markdown span.frame {
+    display: block;
+    overflow: hidden;
+}
+
+.markdown span.frame>span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto;
+}
+
+.markdown span.frame span img {
+    display: block;
+    float: left;
+}
+
+.markdown span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0;
+}
+
+.markdown span.align-center {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+.markdown span.align-center>span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center;
+}
+
+.markdown span.align-center span img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.markdown span.align-right {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+.markdown span.align-right>span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right;
+}
+
+.markdown span.align-right span img {
+    margin: 0;
+    text-align: right;
+}
+
+.markdown span.float-left {
+    display: block;
+    margin-right: 13px;
+    overflow: hidden;
+    float: left;
+}
+
+.markdown span.float-left span {
+    margin: 13px 0 0;
+}
+
+.markdown span.float-right {
+    display: block;
+    margin-left: 13px;
+    overflow: hidden;
+    float: right;
+}
+
+.markdown span.float-right>span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right;
+}
+
+.markdown code,
+.markdown tt {
+    margin: 0 2px;
+    padding: 0 5px;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+.markdown pre code {
+    margin: 0;
+    padding: 10px;
+    white-space: pre;
+    border: none;
+}
+
+.markdown .highlight pre {
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+.markdown pre {
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+.markdown pre code,
+.markdown pre tt {
+    border: none;
+}
+
+.markdown p > code.hljs { display: inline; }
+.markdown li > code.hljs { display: inline; }
+
+.emoji-img {
+    height: 20px;
+}
+
+.lang-math {
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+
+
+/* Slideshow container */
+.slideshow-area {
+    position: relative;
+    background-color: black;
+    border: 10px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.slideshow-container {
+  /*max-width: 1000px;*/
+  position: relative;
+  margin: auto;
+  /*border: 10px solid red;*/
+}
+
+.slideshow-control {
+  /*max-width: 1000px;*/
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: auto;
+/*
+  margin-top: -22px;
+  padding: 16px;
+*/
+/*  color: white; */
+  font-weight: bold;
+  font-size: 18px;
+/*  transition: 0.6s ease; */
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.full {
+    height: 40px;
+    width: 40px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .full:hover {
+/*    background-color: rgba(0,0,0,0.8);*/
+    background-color: gray;
+}
+
+/* Caption text */
+.text {
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    font-size: 12px;
+    padding: 8px 12px;
+    color: white;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active, .dot:hover {
+/*  background-color: #717171;*/
+    background-color: #66cc66;
+}
+
+.slideshow-area p > code.hljs {
+    display: inline;
+    padding: 0.1em;
+}
+.slideshow-area li > code.hljs {
+    display: inline;
+    padding: 0.1em;
+}
+
+@media screen and (max-width: 991px) {
+    .slideshow-area {
+        width: 100%;
+    }
+    .dotArea {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .slideshow-area {
+        width: 75%;
+    }
+}
+
+
+.slideshow-area:-webkit-full-screen {
+    position : fixed ;
+    left     : 0 ;
+    top      : 0 ;
+    width    : 100% ;
+    height   : 50%;
+}
+.slideshow-area:-moz-full-screen {
+    position : fixed ;
+    left     : 0 ;
+    top      : 0 ;
+    width    : 100% ;
+    height   : 50%;
+}
+.slideshow-area:-ms-fullscreen {
+    position : fixed ;
+    left     : 0 ;
+    top      : 0 ;
+    width    : 100% ;
+    height   : 50%;
+}
+.slideshow-area:fullscreen {
+    position : fixed ;
+    left     : 0 ;
+    top      : 0 ;
+    width    : 100% ;
+    height   : 50%;
+}
+.slideshow-area:-webkit-full-screen .slideshow-control {
+    position : fixed ;
+    left     : 0 ;
+    bottom      : 0 ;
+    width    : 100% ;
+    height   : 100px;
+    background-color: black;
+    z-index: 100;
+}
+.slideshow-area:-moz-full-screen .slideshow-control {
+    position : fixed ;
+    left     : 0 ;
+    bottom      : 0 ;
+    width    : 100% ;
+    height   : 100px;
+    background-color: black;
+    z-index: 100;
+}
+.slideshow-area:-ms-fullscreen .slideshow-control {
+    position : fixed ;
+    left     : 0 ;
+    bottom      : 0 ;
+    width    : 100% ;
+    height   : 100px;
+    background-color: black;
+    z-index: 100;
+}
+.slideshow-area:fullscreen .slideshow-control {
+    position : fixed ;
+    left     : 0 ;
+    bottom      : 0 ;
+    width    : 100% ;
+    height   : 100px;
+    background-color: black;
+    z-index: 100;
+}
+
+.slide-image {
+    width    : 100%;
+}
+
+.slideshow-area:-webkit-full-screen .slide-image {
+    height : 80vmin;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit- transform: translateX(-50%);
+}
+.slideshow-area:-moz-full-screen .slide-image {
+    height : 80vmin;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit- transform: translateX(-50%);
+}
+.slideshow-area:-ms-fullscreen .slide-image {
+    height : 80vmin;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit- transform: translateX(-50%);
+}
+.slideshow-area:fullscreen .slide-image {
+    height : 80vmin;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit- transform: translateX(-50%);
+}
